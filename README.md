@@ -1,7 +1,5 @@
-Harver QA Exercise
+Gasptar Cypress Automation Exercise
 ========================
-
-This exercise assesses API testing skills.
 
 ## Prequisites
 
