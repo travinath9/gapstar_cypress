@@ -3,56 +3,35 @@ Harver QA Exercise
 
 This exercise assesses API testing skills.
 
-## Background
-
-Harver's new Candidate API has been developed and is almost ready to be released!
-But does it live up to Harver's impeccable quality standards? Your mission is to find out...
-
 ## Prequisites
 
-You'll need **Node.JS** + **NPM** installed to setup and run the server.
+1.Git client installed. To verify if git client is installed properly, open Command Prompt on Windows, or Terminal on Mac, then execute this command git --version
+
+2.NodeJS 8+ installed. To verify if nodejs is installed properly, open Command Prompt on Windows, or Terminal on Mac, then execute this command node --version
 
 ## Setup
 
-First time run the following command:
+1.Download sample source code in this repo under cypress-sample-master.zip package and extract them to
 
-`npm ci`
+2.Open Terminal (for Mac or Linux), or Command Prompt if you are on Windows
+Navigate to source code folder
 
-To start the server:
+3.Run this command to install Cypress:
 
-`npm start`
+    'npm install'
 
-You can now access the API at: [http://localhost:3000](http://localhost:3000)
+## Run Cypress test 
 
-The API specification (how it should work) is detailed in `api.yml`. You can also view the auto-generated documentation
-at [`docs/api.html`](file:docs/api.html).
+This step is to verify you can run Cypress test using VS Code.
 
-## Tasks
+1.Open the Visual Studio Code and open the unzipped folder.
+2.Open the VS Code command terminal for the project folder location
+3.Run this command to execute Cypress test dependent on your Operting System
 
-### API test assignment
+    'Windows: node_modules\.bin\cypress run --browser chrome'
 
-1. Timebox yourself to 1 hour to find as many defects in the API as you can. 
-2. Please share the defects you find in a document or spreadsheet.
+(In additionally if you want to open cypress window IDE, Run this command in terminal)
 
-### Web UI Automation test assignment
+    'npx cypress open'
 
-1. Go to https://the-internet.herokuapp.com/
-2. Select any five elements from the list
-3. Automate the selected elements using any JS based end to end testing framework.
- *Tip!* 
- Selenium (https://www.selenium.dev/documentation/)
- TestCafe (https://testcafe.io/documentation/402634/guides)
- Cypress (https://docs.cypress.io/)
-4. Create a project in github and provide us the link
-5. Make sure you have a readme with instructions inside the project on how to run it
-
-Expectation: All the tests should pass
-
-## Notes
-
-* The database is mocked in memory. Restart the server to reset the data.
-* Some of the API endpoints require [Basic Authentication](https://swagger.io/docs/specification/authentication/basic-authentication/).
-  The username is: `tester` and the password is: `iloveqa`.
-* We've included the boilerplate code to write Bat feature files, for your convenience.
-* We would normally encourage static code analysis to help look for bugs, but for the purpose of this
-  exercise, the `server.js` is deliberately obfuscated.
+4. You should see Cypress is launched and all the tests are executed on Chrome browser. The execution will take some times as Cypress is executing all the specs in this sample so if you don't want to wait for the execution to be finished, simply press Ctrl + C to terminate the execution.
