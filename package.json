@@ -1,0 +1,15 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tharindu",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.10.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
